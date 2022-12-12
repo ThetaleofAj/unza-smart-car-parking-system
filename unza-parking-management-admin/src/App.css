@@ -1,0 +1,173 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.topbar{
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-width: 1px;
+  background-color: #D3D3D3;
+}     
+
+.sidebar{
+  flex: 1;
+  height: calc(100vh - 50px);
+  position: sticky;
+  top: 50px;
+  background-color: #c0c0c0;
+}
+
+
+.sidebarWrapper{
+  padding: 20px;
+  color: #555;
+}
+
+
+.sidebarMenu{
+  margin-bottom: 10px;   
+}
+
+
+.sidebarTitle{
+  font-size: 18px;
+  text-decoration: none;
+  color: #282c34 
+  ;
+}
+
+.topbarWrapper{
+  height: 100%;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  font-weight: bold;
+  font-size: 30px;
+  color: green;
+  cursor: pointer;
+}
+
+.topbarIconContainer{
+  position: relative;
+}
+
+.icon{
+  margin: 5px;
+}
+
+.topRight{
+  display: flex;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+}
+
+.home{
+  flex: 4;
+  padding: 15px;
+}
+/* 
+.featured{
+  width: 100px;
+  display: flex;
+  justify-content:space-between ;
+} */
+.featuredTitle{
+  font-weight: bold;
+  font-size: 20px;
+}
+.featured{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.featuredItem{
+  flex: 1;
+  margin: -5px;
+  text-align: center;
+}
+
+.circular-progress::before{
+  content: "";
+  position: absolute;
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.progress-value{
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  color: green;
+}
+.text{
+  font-size: 30px;
+  font-weight: 500;
+  color: #606060;
+}
+
+.others{
+  flex: 4;
+}
+
+.sidebarListItem{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+
+.MyLinks.active,
+.MyLinks:hover{
+  background-color: rgb(228, 228, 250);
+}
+
+

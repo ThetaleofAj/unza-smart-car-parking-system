@@ -1,0 +1,114 @@
+<div className='featured'>
+        <div className='featuredItem'>
+          <span className='featuredTitle'>Staff</span>
+          <div className='featuredMoneyContainer'>
+          <div style={{
+            display: 'flex',
+            width: '420px',
+            padding: '50px 0',
+            borderRadius: '8px',
+            background: '#fff',
+            rowGap: '30px',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}>
+            <div className="circular-progress" style={{
+               position: "relative",
+               height: "250px",
+               width: '250px',
+             borderRadius: "50%",
+             background: `conic-gradient(#7d2ae8 ${visitors}deg, #ededed 0deg)`,
+             display: "flex",
+             alignItems: "center",
+             justifyContent: "center"
+
+            }}>
+                <span className="progress-value">{newNum}%</span>
+            </div>
+        </div>
+          </div>
+        </div>
+        <div className='featuredItem'>
+          <span className='featuredTitle'>Students</span>
+          <div className='featuredMoneyContainer'>
+          <div style={{
+            display: 'flex',
+            width: '420px',
+            padding: '50px 0',
+            borderRadius: '8px',
+            background: '#fff',
+            rowGap: '30px',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}>
+            <div className="circular-progress" style={{
+               position: "relative",
+               height: "250px",
+               width: '250px',
+             borderRadius: "50%",
+             background: `conic-gradient(#7d2ae8 ${visitors}deg, #ededed 0deg)`,
+             display: "flex",
+             alignItems: "center",
+             justifyContent: "center"
+
+            }}>
+                <span className="progress-value">{newNum}%</span>
+            </div>
+        </div>
+          </div>
+        </div>
+        <div className='featuredItem'>
+          <span className='featuredTitle'>Guests</span>
+          <div className='featuredMoneyContainer'>
+          <div style={{
+            display: 'flex',
+            width: '420px',
+            padding: '50px 0',
+            borderRadius: '8px',
+            background: '#fff',
+            rowGap: '30px',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}>
+            <div className="circular-progress" style={{
+               position: "relative",
+               height: "250px",
+               width: '250px',
+             borderRadius: "50%",
+             background: `conic-gradient(#7d2ae8 ${visitors}deg, #ededed 0deg)`,
+             display: "flex",
+             alignItems: "center",
+             justifyContent: "center"
+
+            }}>
+                <span className="progress-value">{newNum}%</span>
+            </div>
+        </div>
+          </div>
+        </div>
+      </div>
+<TableContainer component={Paper} style={{width:1050,marginLeft:120}}>
+  <Table aria-label='a dense table' size='small' style={{width:900,marginLeft:100}}>
+    <TableHead>
+      <TableRow>
+        <TableCell>Name</TableCell>
+        <TableCell>ID number</TableCell>
+        <TableCell>Status</TableCell>
+        <TableCell>Entry Time</TableCell>
+      </TableRow>
+    </TableHead>
+    <TableBody>
+      {info.map((row)=>(
+        <TableRow key={row.id}>
+          <TableCell component='th' scope='row'>
+            {row.name}
+          </TableCell>
+          <TableCell >{row['id#']}</TableCell>
+          <TableCell >{row.status}</TableCell>
+          <TableCell >{row['in-time']}</TableCell>
+        </TableRow>
+      ))}
+    </TableBody>
+  </Table>
+</TableContainer>
+<h1>System Controls..</h1>
