@@ -1,0 +1,2 @@
+# unza-smart-car-parking-system
+The University of Zamhia automatic number plate recognition smart car parking system was my university final year project. It was designed and built to implement access control managment in the university parking lots. It featured an actual sized boom gate, raspberry pi, pi camera and arduino uno which together could do automatic number plate detection and recognition. It also features a web app for control of the whole system and a mobile app for users of the system. 
